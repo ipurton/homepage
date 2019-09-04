@@ -31,10 +31,6 @@ h2 {
     font-family: "Cambria", Verdana, sans-serif;
     color: #375827;
 }
-img {
-    max-height: 100%;
-    max-width: 100%;
-}
 p {
     padding-left: 15%;
 }
@@ -100,7 +96,7 @@ p {
     }
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px;
+    padding: 5px 20px 0px;
     background-color: #eac8cf;
     max-height: 0;
     overflow: hidden;
@@ -113,6 +109,7 @@ p {
 }
     .panel img {
         display: inline-block;
-        height: 8%;
-        padding: 5px;
+        /* max-height: 30%; */
+        max-width: 10%;
+        padding: 0px 5px;
     }
