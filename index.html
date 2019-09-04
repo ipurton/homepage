@@ -1,0 +1,71 @@
+<html>
+<title>Isaac Purton's Homepage</title>
+<meta name="keywords" content="Isaac Purton, Isaac, Purton, Issac, Issac Purton"> 
+<link rel="stylesheet"  type="text/css" href="def.css">
+<div class="greetings">
+	<div class="greetings-text">
+		<h1>Hi, I'm Isaac Purton</h1>
+	</div>
+</div>
+<div class="declaration">
+	<div class="declaration-text">
+		<h2>and here's my,</h2>
+	</div>
+</div>
+<button class="accordion">...social life,</button>
+<div class="panel">
+	<a href="https://www.twitter.com/ipurton">
+		<img src="images/twitter.png" alt="Twitter">
+	</a>
+	<a href="https://www.linkedin.com/ipurton">
+		<img src="images/linkedin.png" alt="LinkedIn">
+	</a>
+	<a href="https://github.com/ipurton">
+		<img src="images/github.png" alt="GitHub">
+	</a>
+	<a href="https://www.tumblr.com/ipurton">
+		<img src="images/tumblr.png" alt="Tumblr">
+	</a>
+	<a href="https://www.flickr.com/photos/oldrockingchair/">
+		<img src="images/flickr.png" alt="Flickr">
+	</a>
+	<a href="https://empirexl.wordpress.com/">
+		<img src="images/empirexl.png" alt="EmpireXL">
+	</a>
+</div>
+<button class="accordion">...resume,</button>
+<div class="panel">
+	<p><b>Core Research Coordinator</b>, VA Puget Sound Health Care System, Seattle Epidemiologic Research and Information Center (ERIC), Seattle, WA <i>(Feb 2016 - Present)</i></p>
+	<p><b>Lab Assistant</b>, New York University, Center for Brain Imaging, Art Lab, New York, NY <i>(July 2014 - June 2015)</i></p>
+	<p><b>IT Help Desk</b>, Workman Publishing, New York, NY <i>(May 2014 - June 2015)</i></p>
+	<p><b>Administrative Coordinator</b>, Pacific Northwest Diabetes Research Institute (PNDRI), The Environmental Determinants of Diabetes in the Young (TEDDY) Study, Seattle, WA <i>(Jan 2012 - Aug 2013)</i></p>
+	<p><b>Research Assistant</b>, Pacific Northwest Diabetes Research Institute (PNDRI), The Environmental Determinants of Diabetes in the Young (TEDDY) Study, Seattle, WA <i>(Jan 2012 - Aug 2013)</i></p>
+	<p><b>Research Assistant</b>, Behavioral Research and Therapy Centers (BRTC), University of Washington, Seattle, WA <i>(Aug 2010 - Mar 2011)</i></p>
+	<p><b>Master of Arts (Psychology)</b>, New York University, New York, NY <i>(Sep 2013 - Sep 2015)</i></p>
+	<p><b>Bachelor of Arts (Psychology and Sociology)</b>, University of Washington, Seattle, WA <i>(June 2007 - June 2011)</i></p>
+</div>
+<button class="accordion">...and contact information.</button>
+<div class="panel">
+	<p><a href="mailto:hello@isaacpurton.com">Email (hello@isaacpurton.com)</a></p> 
+	<p><a href="tel:+1-678-807-9057">Signal (+1-678-807-9057)</a></p>
+</div>
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+			
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+		/* Toggle between adding and removing the "active" class,
+		to highlight the button that controls the panel */
+		this.classList.toggle("active");
+		/* Toggle between hiding and showing the active panel */
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight){
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+		});
+	}
+</script> 
+</html>
